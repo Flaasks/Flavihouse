@@ -1,0 +1,38 @@
+{
+  "name": "appcasa-backend",
+  "version": "1.0.0",
+  "description": "Backend per AppCasa",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+  "start": "node src/index.js",
+  "start:worker": "node src/worker.js",
+  "dev:worker": "NODE_ENV=development nodemon src/worker.js",
+  "dev": "NODE_ENV=development nodemon src/index.js",
+  "db:seed": "node src/db/seed.js",
+  "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "docker": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.1",
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.1.1",
+    "sqlite3": "^5.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "setupFilesAfterEnv": [],
+    "testTimeout": 20000
+  }
+}
