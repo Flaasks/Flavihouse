@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://flavihouse-api-summer-snowflake-5568.fly.dev/$1" }
+  ]
+}
