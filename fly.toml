@@ -1,27 +1,15 @@
-<<<<<<< HEAD
-# fly.toml app configuration file generated for flavihouse on 2026-02-11T11:16:28Z
-=======
-# fly.toml app configuration file generated for flavihouse-api on 2026-02-11T12:29:47+01:00
->>>>>>> f56e38a (Add Fly deployment workflow and config)
+# fly.toml app configuration file generated for flavihouse-api-summer-snowflake-5568 on 2026-02-11T12:39:18+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-<<<<<<< HEAD
-app = 'flavihouse'
-=======
-app = 'flavihouse-api'
->>>>>>> f56e38a (Add Fly deployment workflow and config)
+app = 'flavihouse-api-summer-snowflake-5568'
 primary_region = 'fra'
 
 [build]
 
 [http_service]
-<<<<<<< HEAD
-  internal_port = 8080
-=======
   internal_port = 3000
->>>>>>> f56e38a (Add Fly deployment workflow and config)
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
@@ -29,11 +17,6 @@ primary_region = 'fra'
   processes = ['app']
 
 [[vm]]
-<<<<<<< HEAD
-  memory = '1gb'
-  cpu_kind = 'shared'
-=======
   memory = '256mb'
->>>>>>> f56e38a (Add Fly deployment workflow and config)
   cpus = 1
   memory_mb = 256
